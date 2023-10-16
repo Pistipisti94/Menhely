@@ -1,0 +1,54 @@
+.navbar-nav .nav-link.active {
+    background-color: rgb(120, 204, 167);
+    color: black;
+}
+.navbar-nav .nav-link{
+    color: bisque;
+}
+.navbar-nav a:hover{
+    background-color: rgb(120, 204, 167);
+    color: black;
+
+}
+.navbar-nav{
+    background-color: rgb(4, 54, 74);
+    
+}
+
+body{
+    background-color: rgb(23, 107, 135);
+}
+header{
+    background-color: rgb(100, 204, 197);
+}
+h1{
+    text-align: center;
+}
+.bg-image{
+    background-image: url('https://www.google.com/imgres?imgurl=http%3A%2F%2Fonwardstate.com%2Fwp-content%2Fuploads%2F2015%2F05%2Fcute.gif&tbnid=YC27Wc6sEpwGRM&vet=12ahUKEwjF6-Gx2e2BAxV79bsIHSluDMAQMygGegQIARBl..i&imgrefurl=https%3A%2F%2Fonwardstate.com%2F2015%2F05%2F04%2Fstop-studying-you-deserve-to-look-at-these-dog-gifs%2F&docid=DIZUNJ8_jPJKfM&w=490&h=240&q=dogs%20gif&ved=2ahUKEwjF6-Gx2e2BAxV79bsIHSluDMAQMygGegQIARBl');
+    height: 400px;
+    margin-top: 58px;
+}
+.kozep{
+    text-align: center;
+    
+     
+}
+*{
+    color: white;
+}
+#emailHelp{
+    color: white;
+}
+button a{
+    color: white;
+    text-decoration: none;
+}
+button a:hover{
+    color: white;
+    
+}
+.card{
+    color: black;
+}
+
