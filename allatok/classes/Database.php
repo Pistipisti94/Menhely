@@ -45,21 +45,34 @@ class Database {
             header("Location: index.php");
         }
     }
-    function update($allatneve,$faj,$fajta,$szuletett,$neme,$nyilvantartas,$megjegyzes){
-        $sql = "UPDATE `allat` SET `allat_neve`='".$allatneve."',`faj`='".$faj."',`fajta`='".$fajta."',`szuletesi_ido`='".$szuletett."',`nem`='".$neme."',`megjegyzes`='".$megjegyzes."',`nyilvantartasban`='".$nyilvantartas."'";
+
+    public function update($allatid, $allatneve, $faj, $fajta, $szuletett, $neme, $nyilvantartas, $megjegyzes) {
+        $sql = "UPDATE `allat` SET `allatid` = '". $allatid ."', `allat_neve`='" . $allatneve . "',`faj`='" . $faj . "',`fajta`='" . $fajta . "',`szuletesi_ido`='" . $szuletett . "',`nem`='" . $neme . "',`megjegyzes`='" . $megjegyzes . "',`nyilvantartasban`='" . $nyilvantartas . "'";
         if ($this->db->query($sql) === TRUE) {
-  echo "Record updated successfully";
-  return $sql;
-} else {
-  echo "Error updating record: " . $this->db->error;
-}
+            echo "Record updated successfully";
+            return $sql;
+        } else {
+            echo "Error updating record: " . $this->db->error;
+        }
     }
-    function osszesAllat() {
+
+    public function osszesAllat() {
         $result = $this->db->query("SELECT * FROM `allat`");
         return $result->fetch_all(MYSQLI_ASSOC);
     }
-    function kivalasztottAllat($id){
-        $result = $this->db->query("SELECT * FROM `allat`WHERE allatid=".$id);
-        return $result ->fetch_assoc();
+
+    public function kivalasztottAllat($id) {
+        $result = $this->db->query("SELECT * FROM `allat`WHERE allatid=" . $id);
+        return $result->fetch_assoc();
+    }
+
+    public function getFajok() {
+        $result = $this->db->query("SELECT DISTINCT `faj` FROM `allat` WHERE 1;");
+        return $result->fetch_all();
+    }
+
+    public function getFajtak() {
+        $result = $this->db->query("SELECT DISTINCT `fajta` FROM `allat` WHERE 1;");
+        return $result->fetch_all();
     }
 }

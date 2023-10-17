@@ -12,7 +12,7 @@
 }
 .navbar-nav{
     background-color: rgb(4, 54, 74);
-    
+
 }
 
 body{
@@ -23,16 +23,6 @@ header{
 }
 h1{
     text-align: center;
-}
-.bg-image{
-    background-image: url('https://www.google.com/imgres?imgurl=http%3A%2F%2Fonwardstate.com%2Fwp-content%2Fuploads%2F2015%2F05%2Fcute.gif&tbnid=YC27Wc6sEpwGRM&vet=12ahUKEwjF6-Gx2e2BAxV79bsIHSluDMAQMygGegQIARBl..i&imgrefurl=https%3A%2F%2Fonwardstate.com%2F2015%2F05%2F04%2Fstop-studying-you-deserve-to-look-at-these-dog-gifs%2F&docid=DIZUNJ8_jPJKfM&w=490&h=240&q=dogs%20gif&ved=2ahUKEwjF6-Gx2e2BAxV79bsIHSluDMAQMygGegQIARBl');
-    height: 400px;
-    margin-top: 58px;
-}
-.kozep{
-    text-align: center;
-    
-     
 }
 *{
     color: white;
@@ -46,9 +36,23 @@ button a{
 }
 button a:hover{
     color: white;
-    
+
 }
 .card{
     color: black;
+}
+.card-img, .card-img-top
+{
+    max-height: 200px;
+    height: 200px;
+    width: auto;
+}
+.kutakep{
+        max-height: 100px;
+    height: 100px;
+    width: auto;
+}
+option{
+    color: red;
 }
 
